@@ -17,4 +17,4 @@ elif (numeroB > numeroA):
     print (f"El numero B es mayor que A, pues {numeroB} > {numeroA}")
 else:
     print (f"El numero A es igual a B, pues {numeroA} = {numeroB}")
-    
+
