@@ -25,7 +25,7 @@ MENSAJE_PERDISTE = 'Perdiste, lo lamento...'
 numeroOculto = random.randint (1,10)
 numeroOcultoDos = random.randint (1,10)
 vidas = None
-
+nivel = 1
 
 dificultad = int (input (PREGUNTA_DIFICULTAD))
 while (dificultad != 1 and dificultad != 2 and dificultad !=3):
@@ -45,17 +45,19 @@ else:
     print('Modo Dificil activado')
 
 numeroIngresado = int (input(PREGUNTAR_NUMERO))
-while (numeroIngresado != numeroOculto and vidas > 1):
+while (numeroIngresado != numeroOculto and vidas > 0):
     if (numeroIngresado > numeroOculto-3 and numeroIngresado < numeroOculto+3):
         print (MENSAJE_CALIENTE)
     else:
         print(MENSAJE_FRIO)
     vidas -= 1
     print (f'Te quedan {vidas} vidas')
-    numeroIngresado = int (input(PREGUNTA_FALLIDA))
+    if (vidas > 0):
+        numeroIngresado = int (input(PREGUNTA_FALLIDA))
 
 if (vidas > 0 and numeroIngresado == numeroOculto):
     print (MENSAJE_SEGUNDO_NIVEL) 
+    nivel = nivel + 1
     numeroIngresado = int (input(PREGUNTAR_NUMERO_2))
     while (numeroIngresado != numeroOcultoDos and vidas > 0):
         if (numeroIngresado > numeroOcultoDos - 3 and numeroIngresado < numeroOcultoDos + 3):
@@ -67,10 +69,11 @@ if (vidas > 0 and numeroIngresado == numeroOculto):
         numeroIngresado = int(input(PREGUNTA_FALLIDA))
 else:
     print (MENSAJE_PERDISTE, 'El numero era el', numeroOculto)
+if (nivel == 2):
 
-if (vidas > 0 and numeroIngresado == numeroOcultoDos):
-    print (MENSAJE_GANASTE)
-else:
-    print (MENSAJE_PERDISTE, 'El numero era el', numeroOcultoDos)
+    if (vidas > 0 and numeroIngresado == numeroOcultoDos):
+        print (MENSAJE_GANASTE)
+    else:
+        print (MENSAJE_PERDISTE, 'El numero era el', numeroOcultoDos)
 
 
