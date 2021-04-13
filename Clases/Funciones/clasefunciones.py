@@ -73,3 +73,11 @@ print (potenciar(5,6))
 
 calcular (multiplicar, 63, 67)    
 
+
+def ListalineaPorLinea (lista):              #Para mostrar elemento a elemento de una lista
+    for elemento in lista:
+        print(elemento)
+
+def mostrar2Listas (lista1, lista2):      #Mostrar dos listas a la vez, deben tener la misma longitud
+    for i in range (len(lista1)):
+        print (lista1 [i],'\t', lista2 [i])    #'\'t --> Hace un tab
