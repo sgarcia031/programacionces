@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 pielabels = ['Python', 'Java', 'Dart', 'Js']    #Lables: Python, java, dart, js --> Determinan el orden
 sizes = [50, 25, 15, 10]    #Sizes son los tamaños de cada porcion de la torta, automaticamente cambia colores
-pieExplode = [0, 0, 0.1, 0] #Explode --> Que tan alejado del origen esta la torda. 10% = 0.1. Son para resaltar
+pieExplode = [0, 0, 0.1, 0] #Explode --> Que tan alejado del origen esta la torta. 10% = 0.1. Son para resaltar
 
 ##########
 def etiquetarElementosPorcentuales (sizes, labels, indicador = '-->'):

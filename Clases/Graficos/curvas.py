@@ -15,9 +15,9 @@ plt.show()
 
 
 
-# diccionario['NombresEstudiantes'] = ['Jacobo', 'Dani', 'Maria', 'Elena']
-# diccionario['EdadEstudiantes'] = [18, 22, 32, 14]
-# diccionario['Peso'] = [84,56,60,57]
-# print(diccionario)
+diccionario['NombresEstudiantes'] = ['Jacobo', 'Dani', 'Maria', 'Elena']
+diccionario['EdadEstudiantes'] = [18, 22, 32, 14]
+diccionario['Peso'] = [84,56,60,57]
+print(diccionario)
 
-# print(diccionario['NomresEstudiantes'][-1], diccionario['EdadEstudiantes'][-1], diccionario['Peso'][-1])  #Mostrar todo eso
+print(diccionario['NomresEstudiantes'][-1], diccionario['EdadEstudiantes'][-1], diccionario['Peso'][-1])  #Mostrar todo eso, -1 = ultimo dato de lista
