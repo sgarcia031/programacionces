@@ -1,0 +1,14 @@
+En este documento se encontrará el paciente, la enfermedad que presenta y el precio respectivo de cada consulta.
+------------------------------
+Nombre del paciente: Samuel
+Descripcion de enfermedad: TD
+Precio de consulta: 120000.0
+------------------------------
+Nombre del paciente: Jacobo
+Descripcion de enfermedad: PHD
+Precio de consulta: 130000.0
+------------------------------
+Nombre del paciente: Daniel
+Descripcion de enfermedad: DFD
+Precio de consulta: 100000.0
+------------------------------
