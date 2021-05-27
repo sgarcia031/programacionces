@@ -15,7 +15,7 @@ for letra in texto:
     print (letra)
 
 print (texto [1]) #Toma el segundo elemento de la lista del texto (en este caso seria la o)
-palabras = texto.split ('') # Separa los elementos en los espacios
+palabras = texto.split (' ') # Separa los elementos en los espacios
 print (palabras)
 
 eliminarE = texto.split ('e')
@@ -27,17 +27,17 @@ datos = 'nombre;apellido;edad'
 print(datos.split(';'))
 
 #Como podemos hacer para unir algo que ya se separo
-uniendo = ''.join(eliminarE)
+uniendo = ' '.join(eliminarE)
 print (uniendo)
 info = ' '.join(datos.split(';')) #Lo hace todo a la vez
 print(info)
 
 listaNombre = ['Laura','Juan','Mario', 'Elsa', 'Katherine', 'daniel']  #OJO: Las letras minusculas tienen mas valor, por ello si coloco daniel --> aparecera como si fuese el mayor. Cada letra tiene un valor
 print (max(listaNombre))
-print(max(listaNombre, key=leg)) #Lo va a calcular pero con el tamaño de la palabra (numero de letras)
+print(max(listaNombre, key=len)) #Lo va a calcular pero con el tamaño de la palabra (numero de letras)
 
 respuesta = input('Ingrese Si o No: ')
-if respuesta.upper() == 'SI':
+if (respuesta.upper() == 'SI'):  #.upper --> CONVIERTE TODAS LAS LETRAS A MAYUSCULAS
     print ('Hola, bienvenido al programa')
 else:
     print ('Chao!')
@@ -47,13 +47,14 @@ nombre = input('Ingrese su nombre: ')
 print (nombre.capitalize()) #Lo pone con mayuscula (la priemer palabra)
 
 correo = 'ESPERO QUE ESTES BIEN'
-print (correo.casefold().capitalize()) #Lo vuelve todo en mayuscula y despues pone en mayuscula la primera
+print (correo.casefold().capitalize()) #Lo vuelve todo en minuscula y despues pone en mayuscula la primera
 
 saludo = 'Hola, como estas?'
 nombre = 'Maria Alejandra'
 #Como ponemos mayuscula a dos palabras en una misma frase?
 nombre1 = 'maria alejandra'
 nombres = nombre1.split(' ')
+print (nombres)
 nombre = ''
 for elemento in nombres: 
     nombre += elemento.capitalize() + ' '

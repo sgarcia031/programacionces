@@ -1,0 +1,1 @@
+Se presenta informacion de nombre del equipo medico, una pequeña descripcion de este y su precio de mantenimiento
